@@ -1,0 +1,23 @@
+---
+import SidebarMenu from "../sidebar-menu/sidebar-menu.astro";
+import HiremeButton from "../button/hireme-button.astro";
+import HireIcon from "../icons/hire-icon.astro"
+---
+
+<!-- Sidebar -->
+<aside
+  class="fixed w-60 h-screen flex flex-col items-center justify-center border-r-2 border-black"
+>
+  <!-- Logo -->
+  <div class="h-1/6 w-full flex items-center justify-center">Logo</div>
+  <!-- Menu -->
+  <div class="h-4/6 flex items-center justify-start">
+    <SidebarMenu/>
+  </div>
+  <!-- Hire Me button -->
+  <div class="h-1/6 flex items-center justify-center">
+    <HiremeButton link="#" target="_blank" text="Hire me">
+       <HireIcon/>
+    </HiremeButton>
+  </div>
+</aside>

@@ -1,0 +1,27 @@
+---
+import Link from "../link/link.astro";
+import DotsMenuIcon from "../icons/dots-menu-icon.astro";
+import FullMenuIcon from "../icons/full-menu-icon.astro";
+import ServicesIcon from "../icons/services-icon.astro";
+import PortfolioIcon from "../icons/proyects-icon.astro";
+import ContactIcon from "../icons/contact-icon.astro";
+---
+
+<!-- Sidebar Menu -->
+<div class="flex flex-col gap-2">
+  <Link link="/" text="Home">
+    <DotsMenuIcon />
+  </Link>
+  <Link link="/about" text="About">
+    <FullMenuIcon />
+  </Link>
+  <Link link="/services" text="Services">
+    <ServicesIcon />
+  </Link>
+  <Link link="/portfolio" text="Portfolio">
+    <PortfolioIcon />
+  </Link>
+  <Link link="/contact" text="Contact">
+    <ContactIcon />
+  </Link>
+</div>
