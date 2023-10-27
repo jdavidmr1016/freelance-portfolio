@@ -1,0 +1,12 @@
+---
+interface Props {
+  path: string;
+}
+let newPath = Astro.props.path?.slice(0, 3)
+console.log(newPath)
+---
+
+    <a href={newPath === "/es" ? "/" :"/es/"} class="font-black text-blue-800">
+      {newPath=== "/es" ? "US" :"ES"}
+    </a>
+

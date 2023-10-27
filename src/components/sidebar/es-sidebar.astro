@@ -1,8 +1,10 @@
 ---
-import SidebarMenu from "../sidebar-menu/sidebar-menu.astro";
+import SidebarMenu from "../sidebar-menu/es-sidebar-menu.astro";
 import LangSwitch from "../lang-switch/lang-switch.component.astro"
 import HiremeButton from "../button/hireme-button.astro";
 import HireIcon from "../icons/hire-icon.astro"
+
+const {pathname} = Astro.url
 ---
 
 <!-- Sidebar -->
@@ -19,7 +21,7 @@ import HireIcon from "../icons/hire-icon.astro"
     </div>
     <!-- Languaje Menu -->
     <div class="h-1/6 flex items-center justify-start">
-      <LangSwitch/>
+      <LangSwitch path={pathname}/>
     </div>
   </div>
   <!-- Hire Me button -->
