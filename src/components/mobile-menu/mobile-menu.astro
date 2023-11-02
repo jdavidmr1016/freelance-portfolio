@@ -1,0 +1,28 @@
+---
+import MobileLink from "../link/mobile-link.astro";
+import HomeIcon from "../icons/home-icon.astro";
+import AboutIcon from "../icons/about-icon.astro";
+import ServicesIcon from "../icons/services-icon.astro";
+import PortfolioIcon from "../icons/proyects-icon.astro";
+import ContactIcon from "../icons/contact-icon.astro";
+---
+
+<section
+  class="visible md:invisible fixed bottom-0 h-16 w-screen flex items-center justify-around bg-transparent shadow-md shadow-foreground"
+>
+<MobileLink link="/about" text="About icon link">
+  <AboutIcon />
+</MobileLink>
+<MobileLink link="/services" text="Services icon link">
+  <ServicesIcon />
+</MobileLink>
+<MobileLink link="/" text="Home icon link">
+  <HomeIcon />
+</MobileLink>
+  <MobileLink link="/portfolio" text="Portfolio icon link">
+    <PortfolioIcon />
+  </MobileLink>
+  <MobileLink link="/contact" text="Contact icon link">
+    <ContactIcon />
+  </MobileLink>
+</section>

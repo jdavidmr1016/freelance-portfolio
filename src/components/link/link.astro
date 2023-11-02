@@ -5,12 +5,14 @@ interface Props {
   children: HTMLElement;
 }
 const { text, link } = Astro.props;
-const {pathname} = Astro.url
+const { pathname } = Astro.url;
 ---
 
 <a
   href={link}
-  class={link===pathname ?"flex items-center justify-start text-white gap-2 font-semibold p-2 bg-slate-400 border-b border-slate-400  shadow-b-md shadow-slate-500 cursor-not-allowed" :"flex items-center justify-start text-blue-900 gap-2 font-semibold p-2  border-b border-blue-700 shadow-sm shadow-blue-700 hover:bg-blue-700 hover:text-white hover:shadow-md hover:shadow-blue-700 transition-all ease-in delay-300 "}
+  class={link === pathname
+    ? "flex items-center justify-start text-foreground gap-2 font-semibold p-2 bg-primary-300 border-b border-primary-200  shadow-b-md shadow-primary-200 cursor-not-allowed"
+    : "flex items-center justify-start text-foreground gap-2 font-semibold p-2  border-b border-primary-700 shadow-sm shadow-rimary-700 hover:bg-primary-700 hover:text-foreground hover:shadow-md hover:shadow-primary-700 transition-all ease-in delay-300 "}
 >
   <slot />
   {text}

@@ -6,12 +6,11 @@ interface Props {
   children: HTMLElement;
 }
 const { text, link } = Astro.props;
-
 ---
 
 <a
   href={link}
-  class="flex items-center justify-center gap-2 font-semibold p-2 bg-blue-700 text-white shadow-md shadow-blue-700 hover:shadow-blue-900 hover:bg-blue-900 transition-all ease-in delay-300 "
+  class="flex items-center justify-center gap-2 font-semibold p-2 bg-primary-700 text-white shadow-md shadow-primary-600 hover:shadow-primary-500 hover:bg-primary-600 transition-all ease-in delay-300"
 >
   <slot />
   {text}

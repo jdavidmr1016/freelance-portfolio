@@ -1,0 +1,19 @@
+---
+interface Props {
+  link: string;
+  text: string;
+  children: HTMLElement;
+}
+const { text,link } = Astro.props;
+const { pathname } = Astro.url;
+---
+
+<a
+  href={link}
+  class={link === pathname
+    ? "flex items-center justify-start text-foreground gap-2 font-bold p-4 bg-primary-700   cursor-pointer rounded-full transition-all ease-in-out delay-500 -translate-y-6"
+    : "flex items-center justify-start text-foreground gap-2 font-semibold p-2    hover:bg-primary-400 hover:text-foreground  rounded-full transition-all ease-in-out delay-500 "}
+    aria-label={text}
+>
+  <slot />
+  </a>

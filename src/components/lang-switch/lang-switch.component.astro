@@ -1,12 +1,10 @@
 ---
-interface Props {
-  path: string;
-}
-let newPath = Astro.props.path?.slice(0, 3)
-console.log(newPath)
+let newPath = Astro.props.path?.slice(0, 3);
 ---
 
-    <a href={newPath === "/es" ? "/" :"/es/"} class="font-black text-blue-800">
-      {newPath=== "/es" ? "US" :"ES"}
-    </a>
-
+<a
+  href={newPath === "/es" ? "/" : "/es/"}
+  class="font-black text-foreground hover:text-primary-300"
+>
+  {newPath === "/es" ? "US" : "ES"}
+</a>

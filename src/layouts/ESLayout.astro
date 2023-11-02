@@ -1,8 +1,7 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 import Sidebar from "../components/sidebar/es-sidebar.astro";
 interface Props {
-
   page: string;
 }
 
@@ -18,10 +17,12 @@ const { page } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Shaggy.dev | {page}</title>
-    <ViewTransitions/>
+    <ViewTransitions />
   </head>
   <body>
-    <div class="app__container min-w-screen min-h-screen">
+    <div
+      class="app__container min-w-screen min-h-screen bg-background text-foreground"
+    >
       <Sidebar />
       <div class="ml-60 p-4">
         <slot />

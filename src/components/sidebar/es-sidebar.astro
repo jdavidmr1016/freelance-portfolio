@@ -1,15 +1,15 @@
 ---
 import SidebarMenu from "../sidebar-menu/es-sidebar-menu.astro";
-import LangSwitch from "../lang-switch/lang-switch.component.astro"
+import LangSwitch from "../lang-switch/lang-switch.component.astro";
 import HiremeButton from "../button/hireme-button.astro";
-import HireIcon from "../icons/hire-icon.astro"
+import HireIcon from "../icons/hire-icon.astro";
 
-const {pathname} = Astro.url
+const { pathname } = Astro.url;
 ---
 
 <!-- Sidebar -->
 <aside
-  class="fixed w-60 h-screen flex flex-col items-center justify-center"
+  class="invisible md:visible fixed w-60 h-screen flex flex-col items-center justify-center"
 >
   <!-- Logo -->
   <div class="h-1/6 w-full flex items-center justify-center">Logo</div>
@@ -17,17 +17,17 @@ const {pathname} = Astro.url
   <div class="h-4/6 flex flex-col items-center justify-center gap-2">
     <!-- Sidebar Menu -->
     <div class="h-5/6 flex items-center justify-center">
-      <SidebarMenu/>
+      <SidebarMenu />
     </div>
     <!-- Languaje Menu -->
     <div class="h-1/6 flex items-center justify-start">
-      <LangSwitch path={pathname}/>
+      <LangSwitch path={pathname} />
     </div>
   </div>
   <!-- Hire Me button -->
   <div class="h-1/6 flex items-center justify-center">
     <HiremeButton link="#" target="_blank" text="Hire me">
-       <HireIcon/>
+      <HireIcon />
     </HiremeButton>
   </div>
 </aside>
