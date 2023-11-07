@@ -6,7 +6,7 @@ interface Props {
 }
 const {greeting, name, tagline = 'center'} = Astro.props
 ---
-<header class="flex flex-col lg:flex-row items-center h-screen overflow-hidden">
+<header class="flex flex-col lg:flex-row items-center h-screen overflow-hidden bg-[url('/backgrounds/bg-top-1440w.jpg')] bg-right-top bg-no-repeat bg-contain">
   <div class="mx-auto max-w-xl">
     <div class="mx-auto text-center mt-16 lg:mt-0 mb-8">
       <h4 class="text-pink-700 text-3xl md:text-left">{greeting}</h4>
