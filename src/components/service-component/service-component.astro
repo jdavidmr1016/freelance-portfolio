@@ -1,0 +1,23 @@
+---
+import ServiceImg from "../services-image/services-image.astro";
+
+interface Props {
+style: string;
+image: string;
+link: string;
+imagetext: string;
+service: string;
+}
+
+const {style, image, imagetext , link, service} = Astro.props
+---
+
+
+
+<a class={style} href={link}>
+    <ServiceImg path={image} width={480} height={240} alt={imagetext}/>
+    <h2 class="absolute bottom-12 right-12 text-2xl text-primary-700 font-black "> 
+      {service}
+      <oregr class="text-foreground font-semibold "> Development</span>
+    </h2>
+</a>
