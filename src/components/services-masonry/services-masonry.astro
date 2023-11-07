@@ -1,0 +1,32 @@
+---
+import ServiceComponent from "../service-component/service-component.astro"
+---
+
+<!-- Service page with 3 cards -->
+ <section class="w-full min-h-screen flex flex-col items-center justify-center !p-0">
+
+   <div class="grid grid-cols-2 w-full h-full mr-4 gap-1">
+    <!-- Full stack development -->
+    <ServiceComponent 
+    style="col-span-2  overflow-hidden relative" 
+    service="Full-Stack"
+    image="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    imagetext="Full stack development as service image with a man with a laptop developing software"
+    link="/services/fullstack-dev" />
+    
+  <!-- Backend  development -->
+    <ServiceComponent 
+    style="col-span-1 overflow-hidden relative" 
+    service="Back-End"
+    image="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    imagetext="Back-End as service image with display code embebed on it" 
+    link="/services/backend-dev" />
+ <!-- Full stack development -->
+    <ServiceComponent 
+    style="col-span-1  overflow-hidden relative" 
+    service="Front-End"
+    image="https://images.unsplash.com/photo-1551527559-a0d94ca99202?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  
+    imagetext="Backend as service image with code embebed" 
+    link="/services/frontend-dev" />
+  </div>
+ </section>
