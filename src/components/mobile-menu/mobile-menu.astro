@@ -8,7 +8,7 @@ import ContactIcon from "../icons/contact-icon.astro";
 ---
 
 <section
-  class="visible md:invisible fixed bottom-0 h-16 w-screen flex items-center justify-around bg-transparent shadow-md shadow-foreground"
+  class="visible md:invisible fixed bottom-0 h-16 w-screen flex items-center justify-around shadow-md shadow-foreground mobile-menu"
 >
 <MobileLink link="/about" text="About icon link">
   <AboutIcon />
@@ -26,3 +26,14 @@ import ContactIcon from "../icons/contact-icon.astro";
     <ContactIcon />
   </MobileLink>
 </section>
+<style>
+.mobile-menu{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  
+}
+</style>
