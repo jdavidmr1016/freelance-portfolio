@@ -1,10 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import Hero from '../components/hero/Hero.astro';
 ---
 
 <Layout page="Home">
 	<main>
-		<h1>Hello from astro</h1>
+    <Hero
+      greeting="Hello"
+      name="Luis Santiago"
+      tagline="Full-Stack Developer"
+    >            
+    </Hero>
 	</main>
 </Layout>
