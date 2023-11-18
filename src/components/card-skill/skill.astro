@@ -1,0 +1,12 @@
+---
+interface Props {
+  skill: string;
+  experience: string;
+}
+const {skill, experience} = Astro.props
+---
+
+<div>
+  <h4>{skill}</h4>
+  <p class="font-light text-gray-400">{experience}</p>
+</div>
