@@ -1,0 +1,18 @@
+---
+interface Props {
+  link: string;
+  text: string;
+  target: "_self" | "_blank";
+  align: "m-auto" | ""
+}
+const { text, link, target, align } = Astro.props;
+---
+
+<a
+  href={link}
+  target={target}
+  class:list={['slot="button" rounded-xl py-2 bg-violet-700 font-semibold text-center block w-44 mt-12 hover:bg-primary-600 transition hover:scale-110 ease-in-out duration-150', align]}
+>
+  <slot />
+  {text}
+</a>
