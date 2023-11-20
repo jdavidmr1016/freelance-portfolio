@@ -1,16 +1,17 @@
 ---
 interface Props {
   greeting?: string;
+  secondLine?: string;
 	name: string;
 	tagline?: string;
 }
-const {greeting, name, tagline = 'center'} = Astro.props
+const {greeting, name, tagline = 'center',secondLine} = Astro.props
 ---
 <header class="flex flex-col xl:flex-row items-center h-screen overflow-hidden bg-[url('/backgrounds/bg-top-1440w.jpg')] bg-right-top bg-no-repeat bg-contain">
   <div class="mx-auto max-w-xl">
     <div class="mx-auto text-center mt-16 md:min-w-[29rem] xl:mt-0 mb-8">
       <h4 class="text-pink-700 text-3xl md:text-left">{greeting}</h4>
-      <h1 class="mb-4 text-5xl md:text-6xl md:text-left tracking-tight">I’m  <span class="font-bold">{name}</span></h1>
+      <h1 class="mb-4 text-5xl md:text-6xl md:text-left tracking-tight">{secondLine} <span class="font-bold">{name}</span></h1>
       <p class="font-light text-2xl md:text-4xl md:text-left dark:text-gray-400">{tagline}</p>
     </div>
   </div>

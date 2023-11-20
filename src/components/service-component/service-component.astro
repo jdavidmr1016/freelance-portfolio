@@ -3,13 +3,14 @@ import ServiceImg from "../services-image/services-image.astro";
 
 interface Props {
 style: string;
-image: string;
+image: string ;
 link: string;
 imagetext: string;
 service: string;
+secondLine?: string
 }
 
-const {style, image, imagetext , link, service} = Astro.props
+const {style, image, imagetext , link, service, secondLine} = Astro.props
 ---
 
 
@@ -17,8 +18,9 @@ const {style, image, imagetext , link, service} = Astro.props
 <a class={style} href={link}>
     <ServiceImg path={image} width={480} height={240} alt={imagetext}/>
   <h2 class="service-text absolute bottom-1/2 md:bottom-12 right-12 text-3xl text-primary-700 font-black"> 
-      {service}
-      <span class="text-foreground font-semibold"> Development</span>
+    <span class="text-foreground font-semibold"> {secondLine && secondLine}</span>  
+    {service}
+      <span class="text-foreground font-semibold"> {!secondLine && "Development"}</span>
     </h2>
 </a>
 

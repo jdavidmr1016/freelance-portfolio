@@ -3,7 +3,7 @@ import SidebarMenu from "../sidebar-menu/es-sidebar-menu.astro";
 import LangSwitch from "../lang-switch/lang-switch.component.astro";
 import HiremeButton from "../button/hireme-button.astro";
 import HireIcon from "../icons/hire-icon.astro";
-
+import Logo from "../logo/logo.component.astro";
 const { pathname } = Astro.url;
 ---
 
@@ -12,7 +12,7 @@ const { pathname } = Astro.url;
   class="invisible md:visible fixed w-60 h-screen flex flex-col items-center justify-center"
 >
   <!-- Logo -->
-  <div class="h-1/6 w-full flex items-center justify-center">Logo</div>
+  <div class="h-1/6 w-full flex items-center justify-center"><Logo/></div>
   <!-- Menus Container -->
   <div class="h-4/6 flex flex-col items-center justify-center gap-2">
     <!-- Sidebar Menu -->
