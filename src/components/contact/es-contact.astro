@@ -1,0 +1,40 @@
+---
+import ContactMe from "../contact-contactme/contact-contactme.astro"
+import Form from "../contact-form/contact-form.astro"
+import LinkPlatforms from "../link/link-platforms.astro"
+import GithubIcon from "../icons/logo-github-icon.astro"
+import Upwokcon from "../icons/logo-upwork-icon.astro"
+import EmailIcon from "../icons/logo-mail-icon.astro"
+import Input from "../contact-component/input.astro"
+import Textarea from "../contact-component/textarea.astro"
+import SubmitBtn from "../contact-component/submit-btn.astro"
+---
+
+<div class="max-w-xl xl:max-w-6xl mx-auto px-4 antialiased flex xl:h-screen flex-col xl:flex-row items-center md:justify-evenly">
+  <!-- Sección Plataformas -->
+  <ContactMe
+    title="Contáctame"
+    text1="¡Hola! Si estás interesado en mis servicios de desarrollo web full-stack, no dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte a llevar a cabo tus proyectos."
+    text2="Puedes encontrarme en las siguientes plataformas:">
+    <LinkPlatforms link="#" target="_blank" text="GitHub" >
+      <GithubIcon/>
+    </LinkPlatforms>      
+    <LinkPlatforms link="#" target="_blank" text="Upwork" >
+      <Upwokcon/>
+    </LinkPlatforms>      
+    <LinkPlatforms link="#" target="_blank" text="Correo Electrónico" >
+      <EmailIcon/>
+    </LinkPlatforms>
+  </ContactMe>
+
+  <!-- Sección Formulario -->  
+  <Form
+    title="Envíame un mensaje">
+    <Input type="text" id="name" name="name" placeholder="Nombre" />      
+    <Input type="email" id="email" name="email" placeholder="Correo" />      
+    <Input type="text" id="subject" name="subject" placeholder="Asunto" />
+    <Textarea id="message" name="message" row="4" placeholder="Mensage" />      
+    <SubmitBtn text="Enviar Mensage" />
+  </Form>
+  
+</div>
