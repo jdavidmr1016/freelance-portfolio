@@ -1,0 +1,40 @@
+---
+import ContactMe from "../contact-contactme/contact-contactme.astro"
+import Form from "../contact-form/contact-form.astro"
+import LinkPlatforms from "../link/link-platforms.astro"
+import GithubIcon from "../icons/logo-github-icon.astro"
+import Upwokcon from "../icons/logo-upwork-icon.astro"
+import EmailIcon from "../icons/logo-mail-icon.astro"
+import Input from "../contact-component/input.astro"
+import Textarea from "../contact-component/textarea.astro"
+import SubmitBtn from "../contact-component/submit-btn.astro"
+---
+
+<div class="max-w-xl xl:max-w-6xl mx-auto px-4 antialiased flex xl:h-screen flex-col xl:flex-row items-center md:justify-evenly">
+  <!-- Section Platforms -->
+  <ContactMe
+    title="Contact me"
+    text1="Hi! Look's like you are interested in my web development services. Great! Don't doubt to get in touch with me. I'm here to help you, my client to make your projects a fact"
+    text2="You can write me direct by the next form or reach me by this links:">
+    <LinkPlatforms link="#" target="_blank" text="GitHub" >
+      <GithubIcon/>
+    </LinkPlatforms>      
+    <LinkPlatforms link="#" target="_blank" text="Upwork" >
+      <Upwokcon/>
+    </LinkPlatforms>      
+    <LinkPlatforms link="#" target="_blank" text="Email" >
+      <EmailIcon/>
+    </LinkPlatforms>
+  </ContactMe>
+
+  <!-- Section Form -->  
+  <Form
+    title="Send me a message">
+    <Input type="text" id="name" name="name" placeholder="Name" />      
+    <Input type="email" id="email" name="email" placeholder="Email" />      
+    <Input type="text" id="subject" name="subject" placeholder="Subject" />
+    <Textarea id="message" name="message" row="4" placeholder="Message" />      
+    <SubmitBtn text="Send Message" />
+  </Form>
+  
+</div>

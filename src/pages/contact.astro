@@ -1,59 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GithubIcon from "../components/icons/logo-github-icon.astro"
-import Upwokcon from "../components/icons/logo-upwork-icon.astro"
-import EmailIcon from "../components/icons/logo-mail-icon.astro"
+import ContactPage from "../components/contact/contact.astro"
 ---
 
 <Layout page="Contact">
 <main>
-  <div class="max-w-xl xl:max-w-6xl mx-auto px-4 antialiased flex xl:h-screen flex-col xl:flex-row items-center md:justify-evenly">
-    <!-- Section Platforms -->
-    <div class="xl:w-1/2 py-5 xl:p-8 order-2 md:order-1">
-      <h1 class="text-4xl font-bold mb-4">Contáctanos</h1>
-      <p class="text-slate-300 mb-4">¡Hola! Si estás interesado en mis servicios de desarrollo web full-stack, no dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte a llevar a cabo tus proyectos.</p>
-      <p class="text-slate-300 mb-4">Puedes encontrarme en las siguientes plataformas:</p>
-      <div class="flex flex-col space-y-4">
-          <a href="https://github.com/tu-usuario" target="_blank" class="flex items-center text-blue-500 hover:underline">
-            <GithubIcon/>
-            </i> GitHub
-          </a>
-          <a href="https://www.upwork.com/freelancers/tu-usuario" target="_blank" class="flex items-center text-blue-500 hover:underline">
-            <Upwokcon/>
-            </i> Upwork
-          </a>
-          <a href="mailto:tu.email@gmail.com" class="flex items-center text-blue-500 hover:underline">
-            <EmailIcon/>
-            </i> Correo Electrónico
-          </a>
-      </div>
-    </div>
-
-    <!-- Section Form -->
-    <div class="w-full xl:w-1/2 py-5 xl:p-8 order-1 md:order-2">
-      <form action="#" method="POST">
-        <h2 class="text-3xl font-semibold tracking-tight mb-8">Envíanos un mensaje</h2>
-        <div class="mb-4">
-          <!-- <label for="name" class="block text-sm font-medium">Nombre:</label> -->
-          <input type="text" id="nombre" name="name" placeholder="Name" class="mt-1 p-2 w-full border border-stone-700 rounded-md bg-gray-800 text-white">
-        </div>
-        <div class="mb-4">
-          <!-- <label for="email" class="block text-sm font-medium">Correo Electrónico:</label> -->
-          <input type="email" id="email" name="email" placeholder="Email" class="mt-1 p-2 w-full border border-stone-700 rounded-md bg-gray-800 text-white">
-        </div>
-        <div class="mb-4">
-          <!-- <label for="asunto" class="block text-sm font-medium">Asunto:</label> -->
-          <input type="text" id="asunto" name="asunto" placeholder="Subject" class="mt-1 p-2 w-full border border-stone-700 rounded-md bg-gray-800 text-white">
-        </div>
-        <div class="mb-4">
-            <!-- <label for="mensaje" class="block text-sm font-medium">Mensaje:</label> -->
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Message" class="mt-1 p-2 w-full border border-stone-700 rounded-md bg-gray-800 text-white"></textarea>
-        </div>
-        <button type="submit" class="bg-violet-700 font-semibold text-white py-2 w-44 rounded-md hover:bg-primary-600 focus:outline-none focus:ring focus:border-blue-300 transition hover:scale-110 ease-in-out duration-150">
-          Send Message
-        </button>
-      </form>
-    </div>
-  </div>
+  <ContactPage />
 </main>
 </Layout>

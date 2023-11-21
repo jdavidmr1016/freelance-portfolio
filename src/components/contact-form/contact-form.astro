@@ -1,0 +1,13 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props
+---
+
+<div class="w-full xl:w-1/2 py-5 xl:p-8 order-1 md:order-2">
+  <form action="#" method="POST">
+    <h2 class="text-3xl font-semibold tracking-tight mb-8">{title}</h2>
+    <slot />
+  </form>
+</div>
