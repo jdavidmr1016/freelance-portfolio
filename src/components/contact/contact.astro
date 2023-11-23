@@ -29,11 +29,23 @@ import SubmitBtn from "../contact-component/submit-btn.astro"
 
   <!-- Section Form -->  
   <Form
-    title="Send me a message">
-    <Input type="text" id="name" name="name" placeholder="Name" />      
-    <Input type="email" id="email" name="email" placeholder="Email" />      
-    <Input type="text" id="subject" name="subject" placeholder="Subject" />
-    <Textarea id="message" name="message" row="4" placeholder="Message" />      
+    title="Send me a message">    
+    <div class="mb-4">
+      <!-- <label for="name" class="block text-sm font-medium">Nombre:</label> -->
+      <input type="text" id="name" name="name" placeholder="Name" class="mt-1 p-2 w-full border border-stone-700 rounded-md bg-gray-800 text-white">
+    </div>
+    <div class="mb-4">
+      <!-- <label for="email" class="block text-sm font-medium">Correo Electrónico:</label> -->
+      <input type="email" id="email" name="email" placeholder="Email" class="mt-1 p-2 w-full border border-stone-700 rounded-md bg-gray-800 text-white">
+    </div>
+    <div class="mb-4">
+      <!-- <label for="subject" class="block text-sm font-medium">Asunto:</label> -->
+      <input type="text" id="subject" name="subject" placeholder="Subject" class="mt-1 p-2 w-full border border-stone-700 rounded-md bg-gray-800 text-white">
+    </div>
+    <div class="mb-4">
+        <!-- <label for="message" class="block text-sm font-medium">Mensaje:</label> -->
+        <textarea id="message" name="message" rows="4" placeholder="Message" class="mt-1 p-2 w-full border border-stone-700 rounded-md bg-gray-800 text-white"></textarea>
+    </div>
     <SubmitBtn text="Send Message" />
   </Form>
   
