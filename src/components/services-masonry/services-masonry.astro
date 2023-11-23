@@ -3,29 +3,29 @@ import ServiceComponent from "../service-component/service-component.astro"
 ---
 
 <!-- Service page with 3 cards -->
- <section class="w-full min-h-screen flex flex-col items-center justify-center !p-0">
+ <section class="w-full !min-h-full flex flex-col items-center md:justify-center ">
 
    <div class="grid grid-cols-2 w-full h-full mr-4 gap-1">
     <!-- Full stack development -->
     <ServiceComponent 
-    style="col-span-2  overflow-hidden relative " 
-    service="Full-Stack"
-    image="/services/fullstack.webp"
+    style="col-span-2 overflow-hidden relative " 
+    service="Full-Stack "
+    image="/img/fullstack.webp"
     imagetext="Full stack development as service image with a man with a laptop developing software"
     link="/services/fullstack-dev" />
     
   <!-- Backend  development -->
     <ServiceComponent 
     style="col-span-2 md:col-span-1  overflow-hidden relative" 
-    service="Back-End"
-    image="/services/backend.webp"
+    service="Back-End "
+    image="/img/backend.webp"
     imagetext="Back-End as service image with display code embebed on it" 
     link="/services/backend-dev" />
  <!-- Frontend development -->
     <ServiceComponent 
     style="col-span-2 md:col-span-1  overflow-hidden relative" 
-    service="Front-End"
-    image="/services/frontend.webp" 
+    service="Front-End "
+    image="/img/frontend.webp" 
     imagetext="Backend as service image with code embebed" 
     link="/services/frontend-dev" />
   </div>

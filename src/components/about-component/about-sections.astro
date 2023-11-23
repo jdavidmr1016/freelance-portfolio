@@ -8,10 +8,10 @@ interface Props {
 const {title, subtitle, tag, gap="gap-4 text-center font-semibold"} = Astro.props
 ---
 
-<section class="mt-48">
+<section class="mt-32">
   <h3 class="text-center text-3xl font-semibold tracking-tight text-white">{title}</h3>
   {tag ? <p class="text-2xl text-center text-warning-400 py-2">{subtitle}</p> : ""}
-  <div class:list={['mt-20 grid', gap]}>
+  <div class:list={['mt-20 grid md:flex md:justify-around', gap]}>
     <slot/>
   </div>
 </section>

@@ -17,7 +17,7 @@ const {style, image, imagetext , link, service, secondLine} = Astro.props
 
 <a class={style} href={link}>
     <ServiceImg path={image} width={480} height={240} alt={imagetext}/>
-  <h2 class="service-text absolute bottom-1/2 md:bottom-12 right-12 text-3xl text-primary-700 font-black"> 
+  <h2 class="service-text absolute top-1/2 md:bottom-12 right-12 text-lg md:text-2xl text-foreground font-bold"> 
     <span class="text-foreground font-semibold"> {secondLine && secondLine}</span>  
     {service}
       <span class="text-foreground font-semibold"> {!secondLine && "Development"}</span>
@@ -33,7 +33,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6px);
 -webkit-backdrop-filter: blur(6px);
 border: 1px solid rgba(255, 255, 255, 0.22);
-padding: 10px;
+padding: 2rem;
 
 }
 </style>

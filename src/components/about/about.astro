@@ -13,26 +13,25 @@ import RountedButton from "../button/rounted-button.astro";
 ---
 
 <!-- Resumen about me -->
-<section  class="grid items-center gap-8 lg:grid-cols-2 px-4 pt-16 lg:px-[5%] 2xl:px-[16%]">
+<section  class="grid items-center gap-4 lg:grid-cols-2 px-4 pt-16 lg:px-[5%] 2xl:px-[16%]">
   <AboutMe title="About Me" name="I’m Luis Santiago D.">
-    <p>An independent Creative Director based in New York City and Tokyo, with more than 4 years of experience specializing in type-driven brand identities, editorial design, illustrations, and typefaces for clients in the fields of art, hospitality, lifestyle, fashion, and beauty.</p> <br>
-    <p>I work closely with clients to define the best approach in partnership. And depending on the project's needs, I also collaborate with my network of talented creatives to offer a holistic experience.</p>    
+    <p>A Freelance Full Stack Developer based in Kentucky ,EEUU, with more of 4 years of experience specializing in zero to hero web development, ecommerce web aplications, landing pages, custom web solutions for your businnes using the best tech aproach for your needs.</p> <br>
+    <p>I not only work closely with clients, i build succeed long term contractor relations.</p>    
     <RountedButton slot="button" link="#" target="_self" align="" text="Download CV"/>
   </AboutMe>
 </section>
 
-<div class="xl:max-w-7xl mx-auto px-4 pb-32">
+<div class="xl:max-w-7xl mx-auto px-4 !pb-44">
 
   <!-- Educación -->
-  <AboutSections title="Education" >
-      <p>University of Informatics and Technology USI</p>
+  <AboutSections title="Education"gap="!flex !flex-col !items-center !justify-center gap-2">
+      <p>Informatic Science Universitary Degree</p>
       <p>Python postgraduate course</p>
-      <p>Project management technician course</p>
+      <p>Project management course</p>
   </AboutSections>
 
-
   <!-- Empresas donde he trabajado -->
-  <AboutSections title="Over the past 4 years, I’ve worked with an array of international studios and clients" tag="p" subtitle="Including:">
+  <AboutSections title="Over the past 4 years, I’ve worked with some international studios and enterprises" tag="p" subtitle="Including:">
     <p>Anteism Books</p>
     <p>Bower Studios</p>
     <p>Deux Cranes</p>
@@ -46,23 +45,23 @@ import RountedButton from "../button/rounted-button.astro";
   <AboutSections title="Skills" gap="gap-8 lg:grid-cols-2 max-w-md lg:max-w-4xl m-auto">
 
     <Card title="Front-end Development">
-      <Skill skill="HTML" experience="Experienced"/>
-      <Skill skill="CSS" experience="Experienced"/>
       <Skill skill="JavaScript" experience="Experienced"/>
-      <Skill skill="Bootstrap" experience="Experienced"/>
-      <Skill skill="Tailwind" experience="Experienced"/>
       <Skill skill="React" experience="Experienced"/>
+      <Skill skill="CSS" experience="Experienced"/>
+      <Skill skill="HTML" experience="Experienced"/>
+      <Skill skill="SASS" experience="Experienced"/>
+      <Skill skill="Tailwind" experience="Experienced"/>
       <Skill skill="Astro" experience="Experienced"/>
     </Card>
 
     <Card title="Back-end Development">
-      <Skill skill="NodeJS" experience="Intermediate"/>
-      <Skill skill="PHP" experience="Experienced"/>
+      <Skill skill="NodeJS" experience="Experienced"/>
       <Skill skill="Laravel" experience="Experienced"/>
+      <Skill skill="PHP" experience="Experienced"/>
       <Skill skill="MySQL" experience="Experienced"/>
       <Skill skill="MongoDB" experience="Experienced"/>
-      <Skill skill="React" experience="Experienced"/>
-      <Skill skill="Python" experience="Intermediate"/>
+      <Skill skill="Python" experience="Experienced"/>
+      <Skill skill="Django" experience="Experienced"/>
     </Card>
 
   </AboutSections>
@@ -85,7 +84,7 @@ import RountedButton from "../button/rounted-button.astro";
   </AboutSectionsLastTwo>
 
     <!-- Llamada a la acción -->
-    <AboutSectionsLastTwo title="Let's work together" style="text-center font-semibold">      
+    <AboutSectionsLastTwo title="Let's work together" style="text-center font-semibold mb-24">      
       <p>For enquiries or questions please don’t hesitate to contact me.</p>
       <p>Let's talk about your needs and project requirements.</p>
       <RountedButton slot="button" link="#" target="_self" align="m-auto" text="Send me Email"/>
